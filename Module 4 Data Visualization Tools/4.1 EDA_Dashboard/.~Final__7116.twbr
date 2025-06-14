@@ -1,0 +1,3175 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://vizhub/workbooks/HotelBookingAnalysisTableauProject_16851902378310?rev=1.0' id='HotelBookingAnalysisTableauProject_17401293099440' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='hb' inline='true' name='federated.036sm221leutw11gxdtny17am2sd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hb' name='textscan.1oufu350euk96318rbqy1026er5y'>
+            <connection class='textscan' directory='C:/Users/horiz/Downloads' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1oufu350euk96318rbqy1026er5y' name='hb.csv' table='[hb#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='hotel' ordinal='0' />
+            <column datatype='integer' name='is_canceled' ordinal='1' />
+            <column datatype='integer' name='lead_time' ordinal='2' />
+            <column datatype='date' date-parse-format='yyyy' name='arrival_date_year' ordinal='3' />
+            <column datatype='string' name='arrival_date_month' ordinal='4' />
+            <column datatype='integer' name='arrival_date_week_number' ordinal='5' />
+            <column datatype='integer' name='arrival_date_day_of_month' ordinal='6' />
+            <column datatype='integer' name='stays_in_weekend_nights' ordinal='7' />
+            <column datatype='integer' name='stays_in_week_nights' ordinal='8' />
+            <column datatype='integer' name='adults' ordinal='9' />
+            <column datatype='integer' name='children' ordinal='10' />
+            <column datatype='integer' name='babies' ordinal='11' />
+            <column datatype='string' name='meal' ordinal='12' />
+            <column datatype='string' name='country' ordinal='13' />
+            <column datatype='string' name='market_segment' ordinal='14' />
+            <column datatype='string' name='distribution_channel' ordinal='15' />
+            <column datatype='integer' name='is_repeated_guest' ordinal='16' />
+            <column datatype='integer' name='previous_cancellations' ordinal='17' />
+            <column datatype='integer' name='previous_bookings_not_canceled' ordinal='18' />
+            <column datatype='string' name='reserved_room_type' ordinal='19' />
+            <column datatype='string' name='assigned_room_type' ordinal='20' />
+            <column datatype='integer' name='booking_changes' ordinal='21' />
+            <column datatype='string' name='deposit_type' ordinal='22' />
+            <column datatype='integer' name='agent' ordinal='23' />
+            <column datatype='integer' name='company' ordinal='24' />
+            <column datatype='integer' name='days_in_waiting_list' ordinal='25' />
+            <column datatype='string' name='customer_type' ordinal='26' />
+            <column datatype='real' name='adr' ordinal='27' />
+            <column datatype='integer' name='required_car_parking_spaces' ordinal='28' />
+            <column datatype='integer' name='total_of_special_requests' ordinal='29' />
+            <column datatype='string' name='reservation_status' ordinal='30' />
+            <column datatype='date' name='reservation_status_date' ordinal='31' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hotel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hotel]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>hotel</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_canceled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_canceled]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>is_canceled</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lead_time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lead_time]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>lead_time</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[arrival_date_year]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>arrival_date_year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[arrival_date_month]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>arrival_date_month</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_week_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrival_date_week_number]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>arrival_date_week_number</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrival_date_day_of_month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arrival_date_day_of_month]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>arrival_date_day_of_month</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stays_in_weekend_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stays_in_weekend_nights]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>stays_in_weekend_nights</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stays_in_week_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stays_in_week_nights]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>stays_in_week_nights</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adults</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[adults]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>adults</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>children</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[children]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>children</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>babies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[babies]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>babies</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>meal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[meal]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>meal</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market_segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[market_segment]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>market_segment</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distribution_channel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[distribution_channel]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>distribution_channel</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_repeated_guest</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_repeated_guest]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>is_repeated_guest</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>previous_cancellations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[previous_cancellations]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>previous_cancellations</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>previous_bookings_not_canceled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[previous_bookings_not_canceled]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>previous_bookings_not_canceled</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reserved_room_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reserved_room_type]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>reserved_room_type</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>assigned_room_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[assigned_room_type]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>assigned_room_type</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>booking_changes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[booking_changes]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>booking_changes</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deposit_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[deposit_type]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>deposit_type</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>agent</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[agent]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>agent</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[company]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>company</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>days_in_waiting_list</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[days_in_waiting_list]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>days_in_waiting_list</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_type]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>customer_type</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>adr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[adr]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>adr</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>required_car_parking_spaces</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[required_car_parking_spaces]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>required_car_parking_spaces</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_of_special_requests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_of_special_requests]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>total_of_special_requests</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reservation_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reservation_status]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>reservation_status</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reservation_status_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[reservation_status_date]</local-name>
+            <parent-name>[hb.csv]</parent-name>
+            <remote-alias>reservation_status_date</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='hb.csv' datatype='table' name='[__tableau_internal_object_id__].[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]' role='measure' type='quantitative' />
+      <column caption='Adr' datatype='real' name='[adr]' role='measure' type='quantitative' />
+      <column caption='Adults' datatype='integer' name='[adults]' role='measure' type='quantitative' />
+      <column caption='Agent' datatype='integer' name='[agent]' role='measure' type='quantitative' />
+      <column caption='Arrival Date Day Of Month' datatype='integer' name='[arrival_date_day_of_month]' role='dimension' type='quantitative' />
+      <column caption='Arrival Date Month' datatype='string' name='[arrival_date_month]' role='dimension' type='nominal' />
+      <column caption='Arrival Date Week Number' datatype='integer' name='[arrival_date_week_number]' role='dimension' type='ordinal' />
+      <column caption='Arrival Date Year' datatype='date' datatype-customized='true' name='[arrival_date_year]' role='dimension' type='quantitative' />
+      <column caption='Assigned Room Type' datatype='string' name='[assigned_room_type]' role='dimension' type='nominal' />
+      <column caption='Babies' datatype='integer' name='[babies]' role='measure' type='quantitative' />
+      <column caption='Booking Changes' datatype='integer' name='[booking_changes]' role='measure' type='quantitative' />
+      <column caption='Children' datatype='integer' name='[children]' role='measure' type='quantitative' />
+      <column caption='Company' datatype='integer' name='[company]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Customer Type' datatype='string' name='[customer_type]' role='dimension' type='nominal' />
+      <column caption='Days In Waiting List' datatype='integer' name='[days_in_waiting_list]' role='measure' type='quantitative' />
+      <column caption='Deposit Type' datatype='string' name='[deposit_type]' role='dimension' type='nominal' />
+      <column caption='Distribution Channel' datatype='string' name='[distribution_channel]' role='dimension' type='nominal' />
+      <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+      <column caption='Is Canceled' datatype='integer' name='[is_canceled]' role='measure' type='quantitative' />
+      <column caption='Is Repeated Guest' datatype='integer' name='[is_repeated_guest]' role='measure' type='quantitative' />
+      <column caption='Lead Time' datatype='integer' name='[lead_time]' role='measure' type='quantitative' />
+      <column caption='Market Segment' datatype='string' name='[market_segment]' role='dimension' type='nominal' />
+      <column caption='Meal' datatype='string' name='[meal]' role='dimension' type='nominal' />
+      <column caption='Previous Bookings Not Canceled' datatype='integer' name='[previous_bookings_not_canceled]' role='measure' type='quantitative' />
+      <column caption='Previous Cancellations' datatype='integer' name='[previous_cancellations]' role='measure' type='quantitative' />
+      <column caption='Required Car Parking Spaces' datatype='integer' name='[required_car_parking_spaces]' role='measure' type='quantitative' />
+      <column caption='Reservation Status' datatype='string' name='[reservation_status]' role='dimension' type='nominal' />
+      <column caption='Reservation Status Date' datatype='date' name='[reservation_status_date]' role='dimension' type='ordinal' />
+      <column caption='Reserved Room Type' datatype='string' name='[reserved_room_type]' role='dimension' type='nominal' />
+      <column caption='Stays In Week Nights' datatype='integer' name='[stays_in_week_nights]' role='measure' type='quantitative' />
+      <column caption='Stays In Weekend Nights' datatype='integer' name='[stays_in_weekend_nights]' role='measure' type='quantitative' />
+      <column caption='Total Of Special Requests' datatype='integer' name='[total_of_special_requests]' role='measure' type='quantitative' />
+      <column-instance column='[adults]' derivation='Count' name='[cnt:adults:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[arrival_date_year]' derivation='Count' name='[cnt:arrival_date_year:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[hotel]' derivation='Count' name='[cnt:hotel:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+      <column-instance column='[market_segment]' derivation='None' name='[none:market_segment:nk]' pivot='key' type='nominal' />
+      <column-instance column='[arrival_date_year]' derivation='Count' name='[pcto:cnt:arrival_date_year:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[hotel]' derivation='Count' name='[pcto:cnt:hotel:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[is_canceled]' derivation='Sum' name='[pcto:sum:is_canceled:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[adults]' derivation='Sum' name='[sum:adults:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[babies]' derivation='Sum' name='[sum:babies:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[children]' derivation='Sum' name='[sum:children:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[is_canceled]' derivation='Sum' name='[sum:is_canceled:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[stays_in_week_nights]' derivation='Sum' name='[sum:stays_in_week_nights:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[stays_in_weekend_nights]' derivation='Sum' name='[sum:stays_in_weekend_nights:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Country,Hotel)' hidden='true' name='[Action (Country,Hotel)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[country]' />
+          <groupfilter function='level-members' level='[hotel]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Hotel)' hidden='true' name='[Action (Hotel)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[hotel]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/Hotel Booking Analysis Tableau Project.twb Files/federated.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/25/2023 03:15:42 PM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>hotel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[hotel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hotel</remote-alias>
+              <ordinal>0</ordinal>
+              <family>hb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_canceled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_canceled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_canceled</remote-alias>
+              <ordinal>1</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lead_time</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[lead_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lead_time</remote-alias>
+              <ordinal>2</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1190</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>arrival_date_year</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[arrival_date_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>arrival_date_year</remote-alias>
+              <ordinal>3</ordinal>
+              <family>hb.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>arrival_date_month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[arrival_date_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>arrival_date_month</remote-alias>
+              <ordinal>4</ordinal>
+              <family>hb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>arrival_date_week_number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[arrival_date_week_number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>arrival_date_week_number</remote-alias>
+              <ordinal>5</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>53</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>arrival_date_day_of_month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[arrival_date_day_of_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>arrival_date_day_of_month</remote-alias>
+              <ordinal>6</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stays_in_weekend_nights</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stays_in_weekend_nights]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stays_in_weekend_nights</remote-alias>
+              <ordinal>7</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stays_in_week_nights</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stays_in_week_nights]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stays_in_week_nights</remote-alias>
+              <ordinal>8</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>adults</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[adults]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>adults</remote-alias>
+              <ordinal>9</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>children</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[children]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>children</remote-alias>
+              <ordinal>10</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>babies</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[babies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>babies</remote-alias>
+              <ordinal>11</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>meal</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[meal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>meal</remote-alias>
+              <ordinal>12</ordinal>
+              <family>hb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>13</ordinal>
+              <family>hb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>215</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>market_segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[market_segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>market_segment</remote-alias>
+              <ordinal>14</ordinal>
+              <family>hb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distribution_channel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[distribution_channel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>distribution_channel</remote-alias>
+              <ordinal>15</ordinal>
+              <family>hb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_repeated_guest</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_repeated_guest]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_repeated_guest</remote-alias>
+              <ordinal>16</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>previous_cancellations</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[previous_cancellations]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>previous_cancellations</remote-alias>
+              <ordinal>17</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>previous_bookings_not_canceled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[previous_bookings_not_canceled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>previous_bookings_not_canceled</remote-alias>
+              <ordinal>18</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reserved_room_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reserved_room_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reserved_room_type</remote-alias>
+              <ordinal>19</ordinal>
+              <family>hb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>assigned_room_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[assigned_room_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>assigned_room_type</remote-alias>
+              <ordinal>20</ordinal>
+              <family>hb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>booking_changes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[booking_changes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>booking_changes</remote-alias>
+              <ordinal>21</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deposit_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[deposit_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deposit_type</remote-alias>
+              <ordinal>22</ordinal>
+              <family>hb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>agent</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[agent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>agent</remote-alias>
+              <ordinal>23</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>501</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>company</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company</remote-alias>
+              <ordinal>24</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>231</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>days_in_waiting_list</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[days_in_waiting_list]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>days_in_waiting_list</remote-alias>
+              <ordinal>25</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>326</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_type</remote-alias>
+              <ordinal>26</ordinal>
+              <family>hb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>adr</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[adr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>adr</remote-alias>
+              <ordinal>27</ordinal>
+              <family>hb.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4258</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>required_car_parking_spaces</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[required_car_parking_spaces]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>required_car_parking_spaces</remote-alias>
+              <ordinal>28</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_of_special_requests</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_of_special_requests]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_of_special_requests</remote-alias>
+              <ordinal>29</ordinal>
+              <family>hb.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reservation_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reservation_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reservation_status</remote-alias>
+              <ordinal>30</ordinal>
+              <family>hb.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reservation_status_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[reservation_status_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reservation_status_date</remote-alias>
+              <ordinal>31</ordinal>
+              <family>hb.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3245</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hb.csv_9011BACACECE4DE1A727FCC2F6970B68]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:market_segment:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Aviation&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Groups&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Direct&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Online TA&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Corporate&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Offline TA/TO&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Complementary&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Undefined&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.036sm221leutw11gxdtny17am2sd].[cnt:adults:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.036sm221leutw11gxdtny17am2sd].[sum:adults:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.036sm221leutw11gxdtny17am2sd].[cnt:hotel:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.036sm221leutw11gxdtny17am2sd].[pcto:cnt:hotel:qk]&quot;</bucket>
+            </map>
+            <map to='#88888a'>
+              <bucket>&quot;[federated.036sm221leutw11gxdtny17am2sd].[sum:stays_in_weekend_nights:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.036sm221leutw11gxdtny17am2sd].[pcto:cnt:arrival_date_year:qk]&quot;</bucket>
+            </map>
+            <map to='#b8bdba'>
+              <bucket>&quot;[federated.036sm221leutw11gxdtny17am2sd].[sum:is_canceled:qk]&quot;</bucket>
+            </map>
+            <map to='#be292f'>
+              <bucket>&quot;[federated.036sm221leutw11gxdtny17am2sd].[sum:stays_in_week_nights:qk]&quot;</bucket>
+            </map>
+            <map to='#cf3032'>
+              <bucket>&quot;[federated.036sm221leutw11gxdtny17am2sd].[cnt:arrival_date_year:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.036sm221leutw11gxdtny17am2sd].[sum:children:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.036sm221leutw11gxdtny17am2sd].[sum:babies:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.036sm221leutw11gxdtny17am2sd].[pcto:sum:is_canceled:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:hotel:nk]' palette='red_10_0' type='palette'>
+            <map to='#d92634'>
+              <bucket>&quot;City Hotel&quot;</bucket>
+            </map>
+            <map to='#e6b7b7'>
+              <bucket>&quot;Resort Hotel&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='hb.csv' id='hb.csv_9011BACACECE4DE1A727FCC2F6970B68'>
+            <properties context=''>
+              <relation connection='textscan.1oufu350euk96318rbqy1026er5y' name='hb.csv' table='[hb#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='hotel' ordinal='0' />
+                  <column datatype='integer' name='is_canceled' ordinal='1' />
+                  <column datatype='integer' name='lead_time' ordinal='2' />
+                  <column datatype='date' date-parse-format='yyyy' name='arrival_date_year' ordinal='3' />
+                  <column datatype='string' name='arrival_date_month' ordinal='4' />
+                  <column datatype='integer' name='arrival_date_week_number' ordinal='5' />
+                  <column datatype='integer' name='arrival_date_day_of_month' ordinal='6' />
+                  <column datatype='integer' name='stays_in_weekend_nights' ordinal='7' />
+                  <column datatype='integer' name='stays_in_week_nights' ordinal='8' />
+                  <column datatype='integer' name='adults' ordinal='9' />
+                  <column datatype='integer' name='children' ordinal='10' />
+                  <column datatype='integer' name='babies' ordinal='11' />
+                  <column datatype='string' name='meal' ordinal='12' />
+                  <column datatype='string' name='country' ordinal='13' />
+                  <column datatype='string' name='market_segment' ordinal='14' />
+                  <column datatype='string' name='distribution_channel' ordinal='15' />
+                  <column datatype='integer' name='is_repeated_guest' ordinal='16' />
+                  <column datatype='integer' name='previous_cancellations' ordinal='17' />
+                  <column datatype='integer' name='previous_bookings_not_canceled' ordinal='18' />
+                  <column datatype='string' name='reserved_room_type' ordinal='19' />
+                  <column datatype='string' name='assigned_room_type' ordinal='20' />
+                  <column datatype='integer' name='booking_changes' ordinal='21' />
+                  <column datatype='string' name='deposit_type' ordinal='22' />
+                  <column datatype='integer' name='agent' ordinal='23' />
+                  <column datatype='integer' name='company' ordinal='24' />
+                  <column datatype='integer' name='days_in_waiting_list' ordinal='25' />
+                  <column datatype='string' name='customer_type' ordinal='26' />
+                  <column datatype='real' name='adr' ordinal='27' />
+                  <column datatype='integer' name='required_car_parking_spaces' ordinal='28' />
+                  <column datatype='integer' name='total_of_special_requests' ordinal='29' />
+                  <column datatype='string' name='reservation_status' ordinal='30' />
+                  <column datatype='date' name='reservation_status_date' ordinal='31' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_B90FB19F4B3E4B84AAAD2E85B8E73ABC]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='HOTEL BOOKING ANALYSIS DASHBOARD' type='sheet' worksheet='Guests Visiting From Different Countries' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='HOTEL BOOKING ANALYSIS DASHBOARD' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_537AEA5482D44452A11406B90C2D4E77]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='HOTEL BOOKING ANALYSIS DASHBOARD' type='sheet' worksheet='Repeated Guest in City &amp; Resort Hotels' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='HOTEL BOOKING ANALYSIS DASHBOARD' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_F022FF2EFF3C4F599322078BB2CC7F50]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Hotel Bokking Dashboard' type='sheet' worksheet='Guests Visiting From Different Countries' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Hotel Bokking Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_CE4005B520E849A5A56921D94A66D7CF]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Hotel Bokking Dashboard' type='sheet' worksheet='Bookings According to Market Segments' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Hotel Bokking Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Bookings According to Market Segments'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontsize='10'>Bookings According to Market Segments</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/HotelBookingAnalysisTableauProject_16851902378310/BookingsAccordingtoMarketSegments?rev=' id='79827596' path='/workbooks/HotelBookingAnalysisTableauProject_16851902378310' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hb' name='federated.036sm221leutw11gxdtny17am2sd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.036sm221leutw11gxdtny17am2sd'>
+            <column-instance column='[market_segment]' derivation='Count' name='[cnt:market_segment:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column caption='Market Segment' datatype='string' name='[market_segment]' role='dimension' type='nominal' />
+            <column-instance column='[market_segment]' derivation='None' name='[none:market_segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[market_segment]' derivation='Count' name='[pcto:cnt:market_segment:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_B90FB19F4B3E4B84AAAD2E85B8E73ABC]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[country]' />
+              <groupfilter function='level-members' level='[hotel]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]'>
+            <groupfilter function='level-members' level='[hotel]' user:ui-action-filter='[Action2_537AEA5482D44452A11406B90C2D4E77]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]</column>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#333333' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.036sm221leutw11gxdtny17am2sd].[none:market_segment:nk]' id='legend-color' value='#ffffff' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#000000' />
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.036sm221leutw11gxdtny17am2sd].[none:market_segment:nk]' id='legend-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.036sm221leutw11gxdtny17am2sd].[cnt:market_segment:qk]' />
+              <text column='[federated.036sm221leutw11gxdtny17am2sd].[none:market_segment:nk]' />
+              <text column='[federated.036sm221leutw11gxdtny17am2sd].[pcto:cnt:market_segment:qk]' />
+              <color column='[federated.036sm221leutw11gxdtny17am2sd].[none:market_segment:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D13F847E-656F-4937-BF6C-B2A43C0C36A4}' />
+    </worksheet>
+    <worksheet name='Bookings Made in City Hotel &amp; Resort Hotel in  year 2015,2016 &amp; 2017'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontsize='10'>Bookings Made in City Hotel &amp; Resort Hotel</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/HotelBookingAnalysisTableauProject_16851902378310/BookingsMadeinCityHotelResortHotelinyear201520162017?rev=' id='79827593' path='/workbooks/HotelBookingAnalysisTableauProject_16851902378310' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hb' name='federated.036sm221leutw11gxdtny17am2sd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.036sm221leutw11gxdtny17am2sd'>
+            <column caption='Arrival Date Year' datatype='date' datatype-customized='true' name='[arrival_date_year]' role='dimension' type='quantitative' />
+            <column-instance column='[arrival_date_year]' derivation='Count' name='[cnt:arrival_date_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[hotel]' derivation='Count' name='[cnt:hotel:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[arrival_date_year]' derivation='Year' name='[yr:arrival_date_year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.036sm221leutw11gxdtny17am2sd].[cnt:arrival_date_year:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.036sm221leutw11gxdtny17am2sd].[cnt:hotel:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_B90FB19F4B3E4B84AAAD2E85B8E73ABC]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[country]' />
+              <groupfilter function='level-members' level='[hotel]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]'>
+            <groupfilter function='level-members' level='[hotel]' user:ui-action-filter='[Action2_537AEA5482D44452A11406B90C2D4E77]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[:Measure Names]</column>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]</column>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.036sm221leutw11gxdtny17am2sd].[Multiple Values]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.036sm221leutw11gxdtny17am2sd].[Multiple Values]</rows>
+        <cols>([federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk] / [federated.036sm221leutw11gxdtny17am2sd].[yr:arrival_date_year:ok])</cols>
+      </table>
+      <simple-id uuid='{121C26F3-4E29-4E98-B52B-A6C6D279C524}' />
+    </worksheet>
+    <worksheet name='Bookings of City &amp; Resort Hotel According to Month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontsize='10'>Bookings of City &amp; Resort Hotel According to Month</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/HotelBookingAnalysisTableauProject_16851902378310/BookingsofCityResortHotelAccordingtoMonth?rev=' id='79827594' path='/workbooks/HotelBookingAnalysisTableauProject_16851902378310' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hb' name='federated.036sm221leutw11gxdtny17am2sd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.036sm221leutw11gxdtny17am2sd'>
+            <column caption='Arrival Date Month' datatype='string' name='[arrival_date_month]' role='dimension' type='nominal' />
+            <column-instance column='[arrival_date_month]' derivation='Count' name='[cnt:arrival_date_month:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[hotel]' derivation='Count' name='[cnt:hotel:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column-instance column='[arrival_date_month]' derivation='None' name='[none:arrival_date_month:nk]' pivot='key' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_B90FB19F4B3E4B84AAAD2E85B8E73ABC]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[country]' />
+              <groupfilter function='level-members' level='[hotel]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]'>
+            <groupfilter function='level-members' level='[hotel]' user:ui-action-filter='[Action2_537AEA5482D44452A11406B90C2D4E77]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]</column>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='21' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' />
+              <text column='[federated.036sm221leutw11gxdtny17am2sd].[cnt:arrival_date_month:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.036sm221leutw11gxdtny17am2sd].[cnt:hotel:qk]</rows>
+        <cols>[federated.036sm221leutw11gxdtny17am2sd].[none:arrival_date_month:nk]</cols>
+      </table>
+      <simple-id uuid='{A6C7211F-D9BF-411D-B8FB-2BC36C8861DE}' />
+    </worksheet>
+    <worksheet name='Cancellations of Hotels per Year With Number Of Bookings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='10'>Cancellations of Hotels per Year With Number Of Bookings</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/HotelBookingAnalysisTableauProject_16851902378310/CancellationsofHotelsperYearWithNumberOfBookings?rev=' id='79827597' path='/workbooks/HotelBookingAnalysisTableauProject_16851902378310' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hb' name='federated.036sm221leutw11gxdtny17am2sd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.036sm221leutw11gxdtny17am2sd'>
+            <column caption='Arrival Date Year' datatype='date' datatype-customized='true' name='[arrival_date_year]' role='dimension' type='quantitative' />
+            <column-instance column='[arrival_date_year]' derivation='Count' name='[cnt:arrival_date_year:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column caption='Is Canceled' datatype='integer' name='[is_canceled]' role='measure' type='quantitative' />
+            <column-instance column='[is_canceled]' derivation='Sum' name='[sum:is_canceled:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[arrival_date_year]' derivation='Year-Trunc' name='[tyr:arrival_date_year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.036sm221leutw11gxdtny17am2sd].[cnt:arrival_date_year:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.036sm221leutw11gxdtny17am2sd].[sum:is_canceled:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_B90FB19F4B3E4B84AAAD2E85B8E73ABC]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[country]' />
+              <groupfilter function='level-members' level='[hotel]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]'>
+            <groupfilter function='level-members' level='[hotel]' user:ui-action-filter='[Action2_537AEA5482D44452A11406B90C2D4E77]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[:Measure Names]</column>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]</column>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.036sm221leutw11gxdtny17am2sd].[Multiple Values]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#f5f5f5' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.036sm221leutw11gxdtny17am2sd].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.036sm221leutw11gxdtny17am2sd].[Multiple Values]</rows>
+        <cols>([federated.036sm221leutw11gxdtny17am2sd].[tyr:arrival_date_year:ok] / [federated.036sm221leutw11gxdtny17am2sd].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{705DEE3E-570A-4FC8-840E-9C722AE1C7D5}' />
+    </worksheet>
+    <worksheet name='Guests Visiting From Different Countries'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontsize='10'>Guests Visiting From Different Countries</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/HotelBookingAnalysisTableauProject_16851902378310/GuestsVisitingFromDifferentCountries?rev=' id='79827599' path='/workbooks/HotelBookingAnalysisTableauProject_16851902378310' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hb' name='federated.036sm221leutw11gxdtny17am2sd' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.036sm221leutw11gxdtny17am2sd'>
+            <column-instance column='[hotel]' derivation='Count' name='[cnt:hotel:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]'>
+            <groupfilter function='level-members' level='[hotel]' user:ui-action-filter='[Action2_537AEA5482D44452A11406B90C2D4E77]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.036sm221leutw11gxdtny17am2sd].[Longitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Longitude (generated)]</column>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.036sm221leutw11gxdtny17am2sd].[Longitude (generated)]' field-type='quantitative' max='4788365.7029163241' min='-761902.656355927' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.036sm221leutw11gxdtny17am2sd].[Latitude (generated)]' field-type='quantitative' max='7390984.8360130545' min='1644623.8551551709' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.036sm221leutw11gxdtny17am2sd].[none:country:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.036sm221leutw11gxdtny17am2sd].[none:country:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.036sm221leutw11gxdtny17am2sd].[none:country:nk]' value='false' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#f5f5f5' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+            <format attr='wrap' value='false' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' />
+              <text column='[federated.036sm221leutw11gxdtny17am2sd].[none:country:nk]' />
+              <lod column='[federated.036sm221leutw11gxdtny17am2sd].[none:country:nk]' />
+              <lod column='[federated.036sm221leutw11gxdtny17am2sd].[cnt:hotel:qk]' />
+              <geometry column='[federated.036sm221leutw11gxdtny17am2sd].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='165' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.036sm221leutw11gxdtny17am2sd].[Latitude (generated)]</rows>
+        <cols>[federated.036sm221leutw11gxdtny17am2sd].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{6881CFFE-1354-4FC3-979A-13E6027DEEF6}' />
+    </worksheet>
+    <worksheet name='Repeated Guest in City &amp; Resort Hotels'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontsize='10'>Repeated Guest in City &amp; Resort Hotels</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/HotelBookingAnalysisTableauProject_16851902378310/RepeatedGuestinCityResortHotels?rev=' id='79827598' path='/workbooks/HotelBookingAnalysisTableauProject_16851902378310' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hb' name='federated.036sm221leutw11gxdtny17am2sd' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.036sm221leutw11gxdtny17am2sd'>
+            <column-instance column='[hotel]' derivation='Count' name='[cnt:hotel:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column caption='Is Repeated Guest' datatype='integer' name='[is_repeated_guest]' role='measure' type='quantitative' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[is_repeated_guest]' derivation='Sum' name='[sum:is_repeated_guest:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_B90FB19F4B3E4B84AAAD2E85B8E73ABC]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[country]' />
+              <groupfilter function='level-members' level='[hotel]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.036sm221leutw11gxdtny17am2sd].[sum:is_repeated_guest:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.036sm221leutw11gxdtny17am2sd].[cnt:hotel:qk]' />
+              <text column='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' />
+              <text column='[federated.036sm221leutw11gxdtny17am2sd].[sum:is_repeated_guest:qk]' />
+              <color column='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5159CD31-D620-41D7-9074-EFDB68B62F49}' />
+    </worksheet>
+    <worksheet name='Stays in Week Nights &amp; Weekend Nights in City &amp; Resort Hotels'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontsize='10'>Stays in Week Nights &amp; Weekend Nights in City &amp; Resort Hotels</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/HotelBookingAnalysisTableauProject_16851902378310/StaysinWeekNightsWeekendNightsinCityResortHotels?rev=' id='79827595' path='/workbooks/HotelBookingAnalysisTableauProject_16851902378310' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hb' name='federated.036sm221leutw11gxdtny17am2sd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.036sm221leutw11gxdtny17am2sd'>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column caption='Stays In Week Nights' datatype='integer' name='[stays_in_week_nights]' role='measure' type='quantitative' />
+            <column caption='Stays In Weekend Nights' datatype='integer' name='[stays_in_weekend_nights]' role='measure' type='quantitative' />
+            <column-instance column='[stays_in_week_nights]' derivation='Sum' name='[sum:stays_in_week_nights:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[stays_in_weekend_nights]' derivation='Sum' name='[sum:stays_in_weekend_nights:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.036sm221leutw11gxdtny17am2sd].[sum:stays_in_week_nights:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.036sm221leutw11gxdtny17am2sd].[sum:stays_in_weekend_nights:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_B90FB19F4B3E4B84AAAD2E85B8E73ABC]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[country]' />
+              <groupfilter function='level-members' level='[hotel]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]'>
+            <groupfilter function='level-members' level='[hotel]' user:ui-action-filter='[Action2_537AEA5482D44452A11406B90C2D4E77]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[:Measure Names]</column>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]</column>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.036sm221leutw11gxdtny17am2sd].[:Measure Names]' value='112' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#ffffff' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='10' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.036sm221leutw11gxdtny17am2sd].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk] / [federated.036sm221leutw11gxdtny17am2sd].[:Measure Names])</rows>
+        <cols>[federated.036sm221leutw11gxdtny17am2sd].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{2A45C8C8-7148-42CF-9BA3-69D4F1976250}' />
+    </worksheet>
+    <worksheet name='Total Bookings In consecutive Years'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontsize='10'>Total Bookings In consecutive Years</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/HotelBookingAnalysisTableauProject_16851902378310/TotalBookingsInconsecutiveYears?rev=' id='79827591' path='/workbooks/HotelBookingAnalysisTableauProject_16851902378310' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hb' name='federated.036sm221leutw11gxdtny17am2sd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.036sm221leutw11gxdtny17am2sd'>
+            <column caption='Arrival Date Year' datatype='date' datatype-customized='true' name='[arrival_date_year]' role='dimension' type='quantitative' />
+            <column-instance column='[arrival_date_year]' derivation='Count' name='[cnt:arrival_date_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[hotel]' derivation='Count' name='[cnt:hotel:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column-instance column='[arrival_date_year]' derivation='Year-Trunc' name='[tyr:arrival_date_year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_B90FB19F4B3E4B84AAAD2E85B8E73ABC]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[country]' />
+              <groupfilter function='level-members' level='[hotel]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]'>
+            <groupfilter function='level-members' level='[hotel]' user:ui-action-filter='[Action2_537AEA5482D44452A11406B90C2D4E77]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]</column>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.036sm221leutw11gxdtny17am2sd].[cnt:arrival_date_year:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.036sm221leutw11gxdtny17am2sd].[cnt:arrival_date_year:qk]' value='#000000' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.036sm221leutw11gxdtny17am2sd].[cnt:hotel:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#cb252c' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.036sm221leutw11gxdtny17am2sd].[cnt:arrival_date_year:qk]</rows>
+        <cols>[federated.036sm221leutw11gxdtny17am2sd].[tyr:arrival_date_year:ok]</cols>
+      </table>
+      <simple-id uuid='{3F68DF51-0675-4DD1-A498-79B35E8947D0}' />
+    </worksheet>
+    <worksheet name='Total Bookings in Resort and City Hotel'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontsize='10'>Total Bookings in Resort and City Hotel</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/HotelBookingAnalysisTableauProject_16851902378310/TotalBookingsinResortandCityHotel?rev=' id='79827590' path='/workbooks/HotelBookingAnalysisTableauProject_16851902378310' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hb' name='federated.036sm221leutw11gxdtny17am2sd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.036sm221leutw11gxdtny17am2sd'>
+            <column caption='Arrival Date Year' datatype='date' datatype-customized='true' name='[arrival_date_year]' role='dimension' type='quantitative' />
+            <column-instance column='[arrival_date_year]' derivation='Count' name='[cnt:arrival_date_year:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[hotel]' derivation='Count' name='[pcto:cnt:hotel:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_B90FB19F4B3E4B84AAAD2E85B8E73ABC]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[country]' />
+              <groupfilter function='level-members' level='[hotel]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]'>
+            <groupfilter function='level-members' level='[hotel]' user:ui-action-filter='[Action2_537AEA5482D44452A11406B90C2D4E77]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]</column>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='background-color' data-class='subtotal' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#333333' />
+            <format attr='background-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-weight' value='bold' />
+            <format attr='background-color' value='#000000' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' />
+              <size column='[federated.036sm221leutw11gxdtny17am2sd].[cnt:arrival_date_year:qk]' />
+              <text column='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' />
+              <text column='[federated.036sm221leutw11gxdtny17am2sd].[pcto:cnt:hotel:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{76D114FB-C403-4187-A992-34C8E22AA5C5}' />
+    </worksheet>
+    <worksheet name='Total Bookings of Resort &amp; City Hotel In consecutive Years'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontsize='10'>Total Bookings of Resort &amp; City Hotel In consecutive Years</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/HotelBookingAnalysisTableauProject_16851902378310/TotalBookingsofResortCityHotelInconsecutiveYears?rev=' id='79827592' path='/workbooks/HotelBookingAnalysisTableauProject_16851902378310' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hb' name='federated.036sm221leutw11gxdtny17am2sd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.036sm221leutw11gxdtny17am2sd'>
+            <column caption='Arrival Date Year' datatype='date' datatype-customized='true' name='[arrival_date_year]' role='dimension' type='quantitative' />
+            <column-instance column='[hotel]' derivation='Count' name='[cnt:hotel:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Hotel' datatype='string' name='[hotel]' role='dimension' type='nominal' />
+            <column-instance column='[hotel]' derivation='None' name='[none:hotel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[arrival_date_year]' derivation='Year-Trunc' name='[tyr:arrival_date_year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_B90FB19F4B3E4B84AAAD2E85B8E73ABC]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[country]' />
+              <groupfilter function='level-members' level='[hotel]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]'>
+            <groupfilter function='level-members' level='[hotel]' user:ui-action-filter='[Action2_537AEA5482D44452A11406B90C2D4E77]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Hotel)]</column>
+            <column>[federated.036sm221leutw11gxdtny17am2sd].[Action (Country,Hotel)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.036sm221leutw11gxdtny17am2sd].[cnt:hotel:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.036sm221leutw11gxdtny17am2sd].[cnt:hotel:qk]</rows>
+        <cols>[federated.036sm221leutw11gxdtny17am2sd].[tyr:arrival_date_year:ok]</cols>
+      </table>
+      <simple-id uuid='{E3D6E5E7-2163-4F69-9237-7DA5CB8566AE}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='HOTEL BOOKING ANALYSIS DASHBOARD'>
+      <repository-location derived-from='https://vizhub/workbooks/HotelBookingAnalysisTableauProject_16851902378310/HOTELBOOKINGANALYSISDASHBOARD?rev=' id='79827589' path='/workbooks/HotelBookingAnalysisTableauProject_16851902378310' revision='' />
+      <style />
+      <size maxheight='1360' maxwidth='2120' minheight='1360' minwidth='1420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98824' id='31' param='vert' type-v2='layout-flow' w='98882' x='559' y='588'>
+            <zone h='98824' id='29' type-v2='layout-basic' w='98882' x='559' y='588'>
+              <zone h='95369' id='7' param='horz' type-v2='layout-flow' w='98882' x='559' y='4043'>
+                <zone h='95369' id='5' type-v2='layout-basic' w='88183' x='559' y='4043'>
+                  <zone h='23842' id='3' name='Total Bookings in Resort and City Hotel' w='31898' x='23737' y='27884'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='23842' id='10' name='Total Bookings In consecutive Years' w='33107' x='55635' y='27884'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='23842' id='17' name='Cancellations of Hotels per Year With Number Of Bookings' w='44095' x='44647' y='51726'>
+                    <layout-cache cell-count-w='6' minheight='525' non-cell-size-w='37' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='23842' id='55' name='Bookings According to Market Segments' w='23178' x='559' y='4043'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='23844' id='57' name='Bookings Made in City Hotel &amp; Resort Hotel in  year 2015,2016 &amp; 2017' w='44098' x='44644' y='75568'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='23844' id='72' name='Bookings of City &amp; Resort Hotel According to Month' w='44085' x='559' y='75568'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='23841' id='73' name='Guests Visiting From Different Countries' w='31927' x='23737' y='4043'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='23841' id='74' name='Total Bookings of Resort &amp; City Hotel In consecutive Years' w='23178' x='559' y='27885'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='23842' id='75' name='Stays in Week Nights &amp; Weekend Nights in City &amp; Resort Hotels' w='44088' x='559' y='51726'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='23841' id='77' name='Repeated Guest in City &amp; Resort Hotels' w='33078' x='55664' y='4043'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='153' h='95369' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='10699' x='88742' y='4043'>
+                  <zone h='4926' id='8' name='Total Bookings in Resort and City Hotel' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' type-v2='color' w='10699' x='88742' y='4043'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='3456' id='9' name='Total Bookings in Resort and City Hotel' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[cnt:arrival_date_year:qk]' type-v2='size' w='10699' x='88742' y='8969'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='1323' id='23' type-v2='text' w='10699' x='88742' y='12425'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='13750' id='56' name='Bookings According to Market Segments' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[none:market_segment:nk]' type-v2='color' w='10699' x='88742' y='13748'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='4926' id='76' name='Stays in Week Nights &amp; Weekend Nights in City &amp; Resort Hotels' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[:Measure Names]' type-v2='color' w='10699' x='88742' y='27498'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone forceUpdate='true' h='3455' id='22' type-v2='text' w='98882' x='559' y='588'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Cascadia Code' fontsize='15'>(AlmaBetter Project) DashBoard of Hotel Booking Analysis - by Kushang Shah</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#000000' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#83231d' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='3300' minheight='3300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='115' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98824' id='114' param='vert' type-v2='layout-flow' w='98882' x='559' y='588'>
+                <zone forceUpdate='true' h='3455' id='22' type-v2='text' w='98882' x='559' y='588'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Cascadia Code' fontsize='15'>(AlmaBetter Project) DashBoard of Hotel Booking Analysis - by Kushang Shah</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#000000' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='23842' id='55' is-fixed='true' name='Bookings According to Market Segments' w='23178' x='559' y='4043'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13750' id='56' name='Bookings According to Market Segments' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[none:market_segment:nk]' type-v2='color' w='10699' x='88742' y='13748'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='23841' id='73' is-fixed='true' name='Guests Visiting From Different Countries' w='31927' x='23737' y='4043'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='23841' id='77' is-fixed='true' name='Repeated Guest in City &amp; Resort Hotels' w='33078' x='55664' y='4043'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='1323' id='23' type-v2='text' w='10699' x='88742' y='12425'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='23842' id='3' is-fixed='true' name='Total Bookings in Resort and City Hotel' w='31898' x='23737' y='27884'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4926' id='8' name='Total Bookings in Resort and City Hotel' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' type-v2='color' w='10699' x='88742' y='4043'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3456' id='9' name='Total Bookings in Resort and City Hotel' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[cnt:arrival_date_year:qk]' type-v2='size' w='10699' x='88742' y='8969'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='23842' id='10' is-fixed='true' name='Total Bookings In consecutive Years' w='33107' x='55635' y='27884'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='23841' id='74' is-fixed='true' name='Total Bookings of Resort &amp; City Hotel In consecutive Years' w='23178' x='559' y='27885'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='23842' id='75' is-fixed='true' name='Stays in Week Nights &amp; Weekend Nights in City &amp; Resort Hotels' w='44088' x='559' y='51726'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4926' id='76' name='Stays in Week Nights &amp; Weekend Nights in City &amp; Resort Hotels' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[:Measure Names]' type-v2='color' w='10699' x='88742' y='27498'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='23842' id='17' is-fixed='true' name='Cancellations of Hotels per Year With Number Of Bookings' w='44095' x='44647' y='51726'>
+                  <layout-cache cell-count-w='6' minheight='525' non-cell-size-w='37' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='23844' id='72' is-fixed='true' name='Bookings of City &amp; Resort Hotel According to Month' w='44085' x='559' y='75568'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='23844' id='57' is-fixed='true' name='Bookings Made in City Hotel &amp; Resort Hotel in  year 2015,2016 &amp; 2017' w='44098' x='44644' y='75568'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#83231d' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C8AC49F2-A21A-47DF-A354-5B3AF3E7CD22}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Hotel Bokking Dashboard'>
+      <style />
+      <size maxheight='1360' maxwidth='2120' minheight='1360' minwidth='1420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='55662' id='12' param='horz' type-v2='layout-flow' w='98874' x='563' y='588'>
+            <zone h='55662' id='5' param='vert' type-v2='layout-flow' w='87606' x='563' y='588'>
+              <zone fixed-size='33' h='3014' id='8' is-fixed='true' type-v2='text' w='87606' x='563' y='588'>
+                <formatted-text>
+                  <run fontalignment='1' fontcolor='#ffffff' fontname='Arial Hebrew Scholar' fontsize='15'>Hotel Booking Analysis</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='52648' id='9' param='horz' type-v2='layout-flow' w='87606' x='563' y='3602'>
+                <zone h='52648' id='14' param='vert' type-v2='layout-flow' w='27536' x='563' y='3602'>
+                  <zone fixed-size='284' h='21470' id='15' is-fixed='true' name='Cancellations of Hotels per Year With Number Of Bookings' w='27536' x='563' y='3602'>
+                    <layout-cache cell-count-w='6' minheight='254' non-cell-size-w='37' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='224' h='17059' id='18' is-fixed='true' name='Bookings Made in City Hotel &amp; Resort Hotel in  year 2015,2016 &amp; 2017' w='27536' x='563' y='25072'>
+                    <layout-cache cell-count-w='3' minheight='175' non-cell-size-w='37' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='184' h='14117' id='17' is-fixed='true' name='Total Bookings In consecutive Years' w='27536' x='563' y='42131'>
+                    <layout-cache cell-count-w='3' minheight='154' non-cell-size-w='36' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='193' h='52648' id='19' is-fixed='true' param='vert' type-v2='layout-flow' w='13592' x='28099' y='3602'>
+                  <zone fixed-size='231' h='17573' id='22' is-fixed='true' name='Bookings According to Market Segments' w='13592' x='28099' y='3602'>
+                    <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='231' h='17573' id='24' is-fixed='true' name='Repeated Guest in City &amp; Resort Hotels' w='13592' x='28099' y='21175'>
+                    <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='230' h='17500' id='20' is-fixed='true' name='Total Bookings in Resort and City Hotel' w='13592' x='28099' y='38748'>
+                    <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='652' h='52648' id='10' is-fixed='true' name='Guests Visiting From Different Countries' w='46478' x='41691' y='3602'>
+                  <layout-cache minheight='234' minwidth='202' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='background-color' value='#830007' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='160' h='55662' id='11' is-fixed='true' param='vert' type-v2='layout-flow' w='11268' x='88169' y='588'>
+              <zone h='4853' id='13' name='Guests Visiting From Different Countries' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' type-v2='color' w='11268' x='88169' y='588'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4853' id='16' name='Cancellations of Hotels per Year With Number Of Bookings' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[:Measure Names]' type-v2='color' w='11268' x='88169' y='5441'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='3456' id='21' name='Total Bookings in Resort and City Hotel' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[cnt:arrival_date_year:qk]' type-v2='size' w='11268' x='88169' y='10294'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12279' id='23' name='Bookings According to Market Segments' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[none:market_segment:nk]' type-v2='color' w='11268' x='88169' y='13750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='43162' id='30' is-fixed='true' type-v2='layout-basic' w='87604' x='563' y='56250'>
+            <zone h='43162' id='27' param='horz' type-v2='layout-flow' w='41124' x='563' y='56250'>
+              <zone fixed-size='589' h='43162' id='29' is-fixed='true' name='Bookings of City &amp; Resort Hotel According to Month' w='41124' x='563' y='56250'>
+                <layout-cache minheight='234' type-h='scalable' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='background-color' value='#830007' />
+              </zone-style>
+            </zone>
+            <zone h='43162' id='31' param='vert' type-v2='layout-flow' w='46480' x='41687' y='56250'>
+              <zone fixed-size='265' h='20073' id='32' is-fixed='true' name='Total Bookings of Resort &amp; City Hotel In consecutive Years' w='46480' x='41687' y='56250'>
+                <layout-cache minheight='154' type-h='scalable' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='306' h='23088' id='28' is-fixed='true' name='Stays in Week Nights &amp; Weekend Nights in City &amp; Resort Hotels' w='46480' x='41687' y='76323'>
+                <layout-cache minwidth='294' type-h='cell' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='background-color' value='#830007' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='43162' id='33' param='horz' type-v2='layout-flow' w='11270' x='88167' y='56250' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2950' minheight='2950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='51' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98824' id='50' param='vert' type-v2='layout-flow' w='98882' x='559' y='588'>
+                <zone fixed-size='33' h='3014' id='8' type-v2='text' w='87693' x='559' y='588'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#ffffff' fontname='Arial Hebrew Scholar' fontsize='15'>Hotel Booking Analysis</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='21470' id='15' is-fixed='true' name='Cancellations of Hotels per Year With Number Of Bookings' w='28042' x='559' y='3602'>
+                  <layout-cache minheight='194' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4853' id='16' name='Cancellations of Hotels per Year With Number Of Bookings' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[:Measure Names]' type-v2='color' w='11189' x='88252' y='5441'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='231' h='17573' id='22' is-fixed='true' name='Bookings According to Market Segments' w='13497' x='28601' y='3602'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3456' id='23' name='Bookings According to Market Segments' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[none:market_segment:nk]' type-v2='color' w='11189' x='88252' y='13750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52648' id='10' is-fixed='true' name='Guests Visiting From Different Countries' w='46153' x='42098' y='3602'>
+                  <layout-cache minheight='234' minwidth='202' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4853' id='13' name='Guests Visiting From Different Countries' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' type-v2='color' w='11189' x='88252' y='588'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='231' h='17573' id='24' is-fixed='true' name='Repeated Guest in City &amp; Resort Hotels' w='13497' x='28601' y='21175'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='224' h='17059' id='18' is-fixed='true' name='Bookings Made in City Hotel &amp; Resort Hotel in  year 2015,2016 &amp; 2017' w='28042' x='559' y='25072'>
+                  <layout-cache minheight='195' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='230' h='17500' id='20' is-fixed='true' name='Total Bookings in Resort and City Hotel' w='13497' x='28601' y='38748'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3456' id='21' name='Total Bookings in Resort and City Hotel' pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[cnt:arrival_date_year:qk]' type-v2='size' w='11189' x='88252' y='10294'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='184' h='14117' id='17' is-fixed='true' name='Total Bookings In consecutive Years' w='28042' x='559' y='42131'>
+                  <layout-cache minheight='154' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43162' id='29' is-fixed='true' name='Bookings of City &amp; Resort Hotel According to Month' w='41129' x='559' y='56250'>
+                  <layout-cache minheight='175' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='265' h='20073' id='32' is-fixed='true' name='Total Bookings of Resort &amp; City Hotel In consecutive Years' w='46483' x='41688' y='56250'>
+                  <layout-cache minheight='154' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='23088' id='28' is-fixed='true' name='Stays in Week Nights &amp; Weekend Nights in City &amp; Resort Hotels' w='46483' x='41688' y='76323'>
+                  <layout-cache minwidth='294' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{213B81E0-AD1C-44FA-B726-5A632750CB2F}' />
+    </dashboard>
+  </dashboards>
+  <windows show-side-pane='false' source-height='30'>
+    <window class='worksheet' name='Total Bookings in Resort and City Hotel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[cnt:arrival_date_year:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{50970C84-4319-4391-91CA-0A181E702AEA}' />
+    </window>
+    <window class='worksheet' name='Total Bookings In consecutive Years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C9057F18-420B-4C7F-B29A-59DF624CECB8}' />
+    </window>
+    <window class='worksheet' name='Total Bookings of Resort &amp; City Hotel In consecutive Years'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C16D11A7-835C-47EC-A665-6344D741A692}' />
+    </window>
+    <window class='worksheet' name='Bookings Made in City Hotel &amp; Resort Hotel in  year 2015,2016 &amp; 2017'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C47F5A42-D922-48AA-B180-4E1EDC4FDDE9}' />
+    </window>
+    <window class='worksheet' name='Bookings of City &amp; Resort Hotel According to Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F0D54669-CBEB-44EA-9EFE-434C9EDF8D07}' />
+    </window>
+    <window class='worksheet' name='Stays in Week Nights &amp; Weekend Nights in City &amp; Resort Hotels'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{91FA2197-317E-497D-981A-A18ED52EAF9F}' />
+    </window>
+    <window class='worksheet' name='Bookings According to Market Segments'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[none:market_segment:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{251837C6-12D7-4585-9B78-CF7BB09BB722}' />
+    </window>
+    <window class='worksheet' name='Cancellations of Hotels per Year With Number Of Bookings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C56441A4-07D3-439B-9F41-702965E61DB7}' />
+    </window>
+    <window class='worksheet' name='Repeated Guest in City &amp; Resort Hotels'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{92980375-789D-424E-9CD4-3F6B0CAE1F99}' />
+    </window>
+    <window class='worksheet' name='Guests Visiting From Different Countries'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.036sm221leutw11gxdtny17am2sd].[none:hotel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{32290CF6-1778-4A25-8465-8E669110354C}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Hotel Bokking Dashboard'>
+      <viewpoints>
+        <viewpoint name='Bookings According to Market Segments'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Bookings Made in City Hotel &amp; Resort Hotel in  year 2015,2016 &amp; 2017'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Bookings of City &amp; Resort Hotel According to Month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Cancellations of Hotels per Year With Number Of Bookings'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Guests Visiting From Different Countries'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Repeated Guest in City &amp; Resort Hotels'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Stays in Week Nights &amp; Weekend Nights in City &amp; Resort Hotels'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Bookings In consecutive Years'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Bookings in Resort and City Hotel'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Bookings of Resort &amp; City Hotel In consecutive Years'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{6ACDA1E3-6037-4A03-A8DD-A1517D1B6BCD}' />
+    </window>
+    <window class='dashboard' name='HOTEL BOOKING ANALYSIS DASHBOARD'>
+      <viewpoints>
+        <viewpoint name='Bookings According to Market Segments'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Bookings Made in City Hotel &amp; Resort Hotel in  year 2015,2016 &amp; 2017'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Bookings of City &amp; Resort Hotel According to Month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Cancellations of Hotels per Year With Number Of Bookings'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Guests Visiting From Different Countries'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Repeated Guest in City &amp; Resort Hotels'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Stays in Week Nights &amp; Weekend Nights in City &amp; Resort Hotels'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Bookings In consecutive Years'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Bookings in Resort and City Hotel'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Bookings of Resort &amp; City Hotel In consecutive Years'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{96887D6A-27F3-4A38-9E20-75822AD21664}' />
+    </window>
+  </windows>
+</workbook>
