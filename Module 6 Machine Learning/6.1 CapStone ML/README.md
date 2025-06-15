@@ -9,12 +9,14 @@
 <br>
 
 <!-- project and ML title -->
-<h1 align='center' style="margin-bottom: 0px;"><a href="https://git.io/typing-svg">
+<h1 align='center' style="margin-bottom: 0px;">
+<!-- <a href="https://git.io/typing-svg"> -->
   <img src="https://readme-typing-svg.herokuapp.com?font=Playfair+Display&weight=500&size=25&duration=5500&pause=1000&color=00FFFF&center=true&random=false&width=600&lines=IndiGO+Airline+Passenger+Referral+Prediction" alt="Typing SVG" />
 </a></h1>
 
 <!-- ML name -->
-<h4 align='center' style="margin-top: 0; margin-bottom: 10px;"><a href="https://git.io/typing-svg">
+<h4 align='center' style="margin-top: 0; margin-bottom: 10px;">
+<!-- <a href="https://git.io/typing-svg"> -->
   <img src="https://readme-typing-svg.herokuapp.com?font=Playfair+Display&weight=100&size=15&duration=5500&pause=1000&color=0FFFFF&center=true&random=false&width=600&lines=Machine+Learning+Project" alt="Typing SVG" />
 </a></h4>
 

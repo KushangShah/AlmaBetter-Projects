@@ -8,21 +8,26 @@
     </a><br>
 </div>
         
-<h1 align=center>AlmaBetter Projects</h1>
+<h1 align='center' style="margin-bottom: 0px;">
+<!-- <a href="https://git.io/typing-svg"> -->
+  <img src="https://readme-typing-svg.herokuapp.com?font=Playfair+Display&weight=1600&size=30&duration=5500&pause=1500&color=00FFFF&center=true&random=false&width=600&lines=AlmaBetter+Projects" alt="Typing SVG" />
+</a></h1>
 
 ---
-
-<details>
+<br><br>
+<details open>
     <summary>1. Introduction to Computer Science</summary>
         <p align=center>
         <a href="https://github.com/KushangShah/AlmaBetter-Projects/tree/main/Module%201%20Introduction%20to%20Computer%20Programming/1.%20Introduction%20to%20Computer%20Programming" target="_blank">📌 Link to project</a><br>
         The "Introduction to Computer Programming" project is designed to evaluate your understanding and practical application of fundamental programming concepts using Python. This assessment encompasses various topics, including data types, indexing, slicing, operators, in-built functions, statements, conditionals, loops, object-oriented programming, and exception handling. In addition, I will showcase my ability to create custom functions and tackle advanced looping concepts.
         </p>
 </details>
+<br><br>
 
 ---
 
-<details>
+<br><br>
+<details open>
     <summary>2. Numerical Programming in Python</summary>
         <h1 align=center>1. Web Scraping</h1>
         <p align=center><a href="https://github.com/KushangShah/AlmaBetter-Projects/tree/main/Module%204%20Data%20Visualization%20Tools/4.1%20EDA_Dashboard" target="_blank">📌 Link to project</a><br>JustWatch is a popular platform that allows users to search for movies and TV shows across multiple streaming services like Netflix, Amazon Prime, Hulu, etc. For this assignment, you will be required to scrape movie and TV show data from JustWatch using Selenium, Python, and BeautifulSoup. Extract data from HTML, not by directly calling their APIs. Then, perform data filtering and analysis using Pandas, and finally, save the results to a CSV file.</p><br>
@@ -43,10 +48,12 @@
         <h3 align=center>Conclusion</h3>
         <p align=center>Through comprehensive exploratory data analysis, valuable insights have been gleaned regarding hotel booking trends, customer behavior, and operational dynamics. These insights can inform strategic decision-making processes, ranging from revenue management to customer experience enhancement. Continued analysis and refinement of these findings will facilitate data-driven optimization of hotel operations and service delivery.</p>
 </details>
+<br><br>
 
 ---
 
-<details>
+<br><br>
+<details open>
     <summary><strong>3. SQL - Relational Database</strong></summary>
     <h1>Telegram-Based Connection Platform</h1>
     <p align="center">
@@ -62,9 +69,11 @@
     </p>
 </details>
 
+<br><br>
 
 ---
-<details >
+<br><br>
+<details open>
     <summary><strong>4. Data Visualization Tools</strong></summary>
     <h1>1. Case Study: Superstore Data Visualization</h1>
     <p align="center">
@@ -83,7 +92,7 @@
     <p align="center">
         <a href="https://github.com/KushangShah/AlmaBetter-Projects/blob/main/Module%204%20Data%20Visualization%20Tools/4.%20%20Tableau/Kushang's%20%20-%20Data%20Vizualization%20Tools.pdf" download="Data_Visualization_Tools.pdf">
             📥 Download PDF
-        </a>
+        </a><br><br><br>
         <h1 align=center>2. Transforming EDAs to Dashboards</h1>
         <p align =center><a href="https://github.com/KushangShah/AlmaBetter-Projects/tree/main/Module%202%20Numerical%20Programming%20in%20Python/2.1.%20Exploratory%20Data%20Analysis" target="_blank">📌 Link to project</a><br><br>
         Transforming Exploratory Data Analysis (EDA) to Dashboarding is a crucial step in the data analysis process.<br>
@@ -96,12 +105,14 @@
         </a>
     </p>
 </details>
+<br><br>
 
 ---
 
-<details>
+<br><br>
+<details open>
     <summary><strong>5. Customer Purchase Behavior Analysis</strong></summary>
-    <h1>1. Customer Purchase Behavior Analysis</h1>
+    <h1 align=center>1. Customer Purchase Behavior Analysis</h1>
     <p align=center><a href="https://github.com/KushangShah/AlmaBetter-Projects/tree/main/Module%205%20Math/5.%20Customer%20Purchase%20Behavior%20Analysis%20using%20Descriptive%20Statistics" target="_blank">
             📌 View Project</a></p>
     <p>
@@ -115,8 +126,8 @@
         <li><strong>Customer Segmentation</strong>: Exploring spending patterns and behavioral insights.</li>
         <li><strong>Business Recommendations</strong>: Visualizing data and providing actionable strategies.</li>
     </ul><br>
-    <h1>2. Applied Statistics Interview Preparation</h1>
-    <p align=center><a href="https://github.com/KushangShah/AlmaBetter-Projects/tree/main/Module%205%20Math/5.%20Customer%20Purchase%20Behavior%20Analysis%20using%20Descriptive%20Statistics" target="_blank">
+    <h1 align=center>2. Applied Statistics Interview Preparation</h1>
+    <p align=center><a href="https://github.com/KushangShah/AlmaBetter-Projects/tree/main/Module%206%20Machine%20Learning/6.1%20CapStone%20ML" target="_blank">
             📌 View Project</a></p>
     <p>
         This project is designed to help students <strong>prepare for statistical interviews</strong> by solving <strong>50 out of 80</strong> technical questions and creating a <strong>dynamic video</strong> explanation for five selected questions. The evaluation focuses on <strong>content accuracy, problem-solving skills, clarity, and presentation quality</strong>.
@@ -134,10 +145,11 @@
         <li><strong>Checklist</strong>: Ensures high-quality documentation, clear video presentation, and correct file sharing.</li>
     </ul>
 </details>
+<br><br>
 
 ---
-
-<details>
+<br><br>
+<details open>
     <summary><strong>6. Heart Disease Prediction Using Machine Learning</strong></summary>
     <h1 align=center>1. Heart Disease Prediction</h1>
     <p align=center><a href="https://github.com/KushangShah/AlmaBetter-Projects/tree/main/Module%206%20Machine%20Learning/6%20Mid%20Course" target="_blank">
@@ -158,9 +170,30 @@
         <li>Utilizing data insights to enhance <strong>healthcare strategies</strong>.</li>
     </ul>
     <br>
-    <h1 align=center>2. Comming soon
-    <p align=center><a href="" target="_blank">
-            📌 UPDATING...</a></p>
+    <h1 align=center>2. IndiGo Airline Passenger Referral Prediction</h1>
+<p align=center><a href="https://github.com/KushangShah/AlmaBetter-Projects/tree/main/Module%206%20Machine%20Learning/6%20Mid%20Course" target="_blank">
+        📌 View Project</a></p>
+<p>
+    This project utilizes <strong>machine learning</strong> to analyze passenger review data and predict the likelihood of a traveler <strong>recommending IndiGo Airlines</strong>, helping improve <strong>customer satisfaction</strong> and <strong>business strategy</strong>.
+</p>
+<h4>🔹 Key Highlights:</h4>
+<ul>
+    <li><strong>Machine Learning Approach</strong>: Supervised learning (classification) using predictive modeling techniques.</li>
+    <li><strong>Data Analysis</strong>: Conducted Exploratory Data Analysis (EDA), feature selection, and correlation studies.</li>
+    <li><strong>Model Development</strong>: Implemented and evaluated classification models such as Logistic Regression, Decision Tree, and Random Forest.</li>
+</ul>
+<h4>💡 Business Impact:</h4>
+<ul>
+    <li>Predicting customer referral behavior to guide <strong>service improvements</strong>.</li>
+    <li>Supporting loyalty programs with <strong>data-driven targeting</strong>.</li>
+    <li>Enhancing decision-making with <strong>customer insights</strong> from review data.</li>
+</ul>
+
 </details>
+<br><br>
 
 ---
+<h1 style="margin-bottom: -20px" align=center>/|_|\</h1>
+<h1 style="margin-bottom: -20px" align=center>( '-' )</h1>
+<h1 style="margin-bottom: -20px; padding-left: 80px;" align="center">/&gt;THE END</h1>
+
