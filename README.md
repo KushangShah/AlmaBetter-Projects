@@ -94,7 +94,7 @@
             📥 Download PDF
         </a><br><br><br>
         <h1 align=center>2. Transforming EDAs to Dashboards</h1>
-        <p align =center><a href="https://github.com/KushangShah/AlmaBetter-Projects/tree/main/Module%202%20Numerical%20Programming%20in%20Python/2.1.%20Exploratory%20Data%20Analysis" target="_blank">📌 Link to project</a><br><br>
+        <p align =center><a href="https://github.com/KushangShah/AlmaBetter-Projects/tree/main/Module%204%20Data%20Visualization%20Tools/4.1%20EDA_Dashboard" target="_blank">📌 Link to project</a><br><br>
         Transforming Exploratory Data Analysis (EDA) to Dashboarding is a crucial step in the data analysis process.<br>
         The dataset comprises information about hotel bookings, including various attributes such as booking dates, customer demographics, booking channels, and reservation details. It encompasses both hotel types: resorts and city hotels.</p>
         <h3 align=center>Conclusion</h3>
