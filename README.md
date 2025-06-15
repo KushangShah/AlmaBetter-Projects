@@ -193,7 +193,8 @@
 <br><br>
 
 ---
-<h1 style="margin-bottom: -20px" align=center>/|_|\</h1>
+<!-- <h1 style="margin-bottom: -20px" align=center>/|_|\</h1>
 <h1 style="margin-bottom: -20px" align=center>( '-' )</h1>
-<h1 style="margin-bottom: -20px; padding-left: 80px;" align="center">/&gt;THE END</h1>
+<h1 style="margin-bottom: -20px; padding-left: 80px;" align="center">/&gt;THE END</h1> -->
 
+<h1 align=center>THE END :D</h1>
