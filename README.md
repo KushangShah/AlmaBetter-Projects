@@ -127,7 +127,7 @@
         <li><strong>Business Recommendations</strong>: Visualizing data and providing actionable strategies.</li>
     </ul><br>
     <h1 align=center>2. Applied Statistics Interview Preparation</h1>
-    <p align=center><a href="https://github.com/KushangShah/AlmaBetter-Projects/tree/main/Module%206%20Machine%20Learning/6.1%20CapStone%20ML" target="_blank">
+    <p align=center><a href="https://github.com/KushangShah/AlmaBetter-Projects/tree/main/Module%205%20Math/5.1%20Capstone%20Project%20Applied%20Statistics" target="_blank">
             📌 View Project</a></p>
     <p>
         This project is designed to help students <strong>prepare for statistical interviews</strong> by solving <strong>50 out of 80</strong> technical questions and creating a <strong>dynamic video</strong> explanation for five selected questions. The evaluation focuses on <strong>content accuracy, problem-solving skills, clarity, and presentation quality</strong>.
